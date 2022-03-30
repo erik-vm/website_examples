@@ -1,0 +1,1115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  --red-color: #db3030;
+  --blue-color: #14335a;
+}
+html {
+  scroll-behavior: smooth;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+h4,
+a {
+  font-size: 1.125em;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h5 {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+p,
+li {
+  font-size: 1.125em;
+}
+p {
+  text-align: justify;
+}
+header {
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  z-index: 10000;
+}
+.topbar {
+  position: relative;
+  width: 100%;
+  padding: 1em 1em 0.3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.7s;
+}
+.topbar-logo {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.topbar-logo img {
+  max-width: 60px;
+}
+.topbar h2 {
+  position: relative;
+  margin-left: 10px;
+  text-transform: uppercase;
+  color: var(--blue-color);
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.topbar h2 span {
+  color: var(--red-color);
+}
+.topbar-info {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 80%;
+  margin-top: 33px;
+}
+.open,
+.topbar-contact,
+.topbar-address {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+.topbar-contact {
+  width: 40%;
+}
+.topbar-address {
+  width: 22%;
+}
+.open img,
+.topbar-contact img,
+.topbar-address img {
+  position: relative;
+  max-width: 30px;
+  margin-right: 10px;
+  filter: invert(13%) sepia(85%) saturate(1212%) hue-rotate(192deg)
+    brightness(91%) contrast(91%);
+}
+.open h4,
+.topbar-contact a,
+.topbar-address a {
+  margin-right: 10px;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--blue-color);
+  padding: 1em 3em;
+  transition: 0.7s;
+}
+nav.sticky {
+  top: 0;
+  padding: 5px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  border-bottom: 1px solid #30303080;
+}
+.nav-logo a img {
+  max-width: 50px;
+  display: none;
+}
+nav ul {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav ul li {
+  position: relative;
+  list-style: none;
+}
+nav ul li a {
+  position: relative;
+  margin-right: 1.5em;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+nav ul a img {
+  position: relative;
+  max-width: 30px;
+  filter: invert(1);
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+nav ul a img:hover {
+  opacity: 1;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  outline: none;
+}
+nav ul li a:before {
+  content: "•";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2em;
+  text-shadow: 0 0 transparent;
+  color: transparent;
+  pointer-events: none;
+  transition: text-shadow 0.3s, color 0.3s;
+  transform: translateX(-50%);
+}
+nav ul li a:hover:before,
+nav ul li a:focus:before {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 15px 0 rgba(255, 255, 255, 1), -15px 0 rgba(255, 255, 255, 1);
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+nav.sticky a img {
+  display: initial;
+}
+nav.sticky ul li a {
+  color: var(--blue-color);
+  font-size: 1em;
+  opacity: 0.8;
+}
+nav.sticky ul li a:hover {
+  color: var(--blue-color);
+  opacity: 1;
+}
+nav.sticky ul a img {
+  position: relative;
+  max-width: 30px;
+  filter: invert(15%) sepia(22%) saturate(3677%) hue-rotate(187deg)
+    brightness(95%) contrast(91%);
+  opacity: 0.8;
+  transition: 0.5s;
+}
+nav.sticky ul li a:hover,
+nav.sticky ul li a:focus {
+  outline: none;
+}
+nav.sticky ul li a:before {
+  content: "•";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2em;
+  text-shadow: 0 0 transparent;
+  color: transparent;
+  pointer-events: none;
+  transition: text-shadow 0.3s, color 0.3s;
+  transform: translateX(-50%);
+}
+nav.sticky ul li a:hover::before,
+nav.sticky ul li a:focus::before {
+  color: var(--blue-color);
+  text-shadow: 15px 0 var(--blue-color), -15px 0 var(--blue-color);
+}
+nav.sticky ul li a:hover,
+nav.sticky ul li a:focus {
+  color: var(--blue-color);
+}
+
+.toggle {
+  display: none;
+}
+.banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(img/maskedcar.jpg);
+  background-size: cover;
+  background-position: center;
+
+  transition: 0.7s;
+}
+.banner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.123);
+}
+.banner:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(
+    360deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(20, 51, 90, 0) 100%
+  );
+}
+.banner .content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.7s;
+}
+.banner .content h1 {
+  position: relative;
+  margin-top: 200px;
+  font-size: 4.5em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.3em;
+  color: #ffffff;
+  text-shadow: 0 0 15px #000000;
+}
+.banner .content h3 {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+
+  text-shadow: 0 0 10px #000000;
+  color: #ffffff;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+.btns {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-width: 46%;
+}
+.btns a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 1.3px;
+
+  z-index: 10;
+}
+.btns a img {
+  max-width: 25px;
+  filter: invert(1);
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  border-right: none;
+  border-radius: 50px 0 0 50px;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--red-color);
+  border: 1px solid var(--red-color);
+  border-left: none;
+  border-radius: 0px 50px 50px 0px;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+.btn1:hover {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-right: none;
+}
+.btn2:hover {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-left: none;
+}
+.teenused {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5em 0;
+}
+.kahjukasitlus {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+.kahjukasitlus .teenused-text {
+  margin-right: 20px;
+}
+.teenused-img img {
+  max-width: 650px;
+}
+.kindlustused {
+  position: relative;
+  background: rgba(218, 218, 218, 0.644);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 170px;
+}
+.kindlustused h2 {
+  margin-bottom: 50px;
+}
+.kindlustused .kindlustus-logod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.kindlustused .kindlustus-logod img {
+  position: relative;
+  max-width: 250px;
+  margin: 20px 50px;
+  transition: 0.5s;
+}
+.kindlustused .kindlustus-logod img:hover {
+  transform: scale(1.1);
+}
+.varvimine {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.varvimine .teenused-img {
+  position: relative;
+  margin-right: 20px;
+}
+.varvimine .teenused-text img {
+  max-height: 70px;
+  margin-top: 10px;
+}
+.keretood {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+.keretood .teenused-text {
+  margin-right: 20px;
+}
+.keretood .teenused-text img {
+  max-height: 180px;
+  margin-top: 30px;
+}
+.meist {
+  position: relative;
+  width: 100%;
+  padding: 30px 0 0 0;
+  background: var(--blue-color);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.meist .content {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0;
+}
+.meist-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 440px;
+  height: 440px;
+  background: #000000;
+}
+.meist-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  opacity: 0;
+}
+.meist-img img.active {
+  opacity: 1;
+}
+.meist-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.controls {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+}
+.controls h2 {
+  position: relative;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-right: 25px;
+  font-family: "Comic Neue", cursive;
+  font-size: 40px;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.controls h2:hover {
+  background: #ffffff;
+  color: var(--blue-color);
+}
+.asukoht-text p {
+  margin: 30px 0;
+}
+.map {
+  position: relative;
+  min-width: 100%;
+}
+.map a img {
+  max-width: 100%;
+}
+.arvustused {
+  position: relative;
+  background: var(--blue-color);
+  color: #ffffff;
+  margin-top: -50px;
+  z-index: 10;
+}
+.arvustused .content {
+  position: relative;
+  display: block;
+}
+.review {
+  position: relative;
+  display: block;
+
+  text-align: left;
+}
+.review h3 {
+  font-weight: 400;
+}
+.review h4 {
+  margin: 25px 0 10px 0;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+.review img {
+  max-width: 130px;
+}
+.kontakt {
+  position: relative;
+  text-align: center;
+}
+.kontakt .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.contact-form {
+  position: relative;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-content: center;
+}
+.form-control,
+.form-control:hover,
+.form-control:focus {
+  position: relative;
+  width: 100%;
+  margin: 15px 0;
+  padding: 5px 0 5px 5px;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+.kontaktid {
+  position: relative;
+  width: 100%;
+  width: 48%;
+  text-align: left;
+}
+.kontakt h4 {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.kontakt h4 span {
+  font-weight: 700;
+}
+.kontakt h5 {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+.kontakt h5 a {
+  text-decoration: none;
+  color: inherit;
+}
+.submit-btn {
+  position: relative;
+  width: 100%;
+  padding: 0.5em;
+  background: var(--red-color);
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 0.5vw;
+  font-weight: 600;
+  color: #ffffff;
+  border: 1px solid var(--red-color);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.submit-btn:hover {
+  color: #000000;
+  background: transparent;
+}
+footer {
+  position: relative;
+  background: var(--blue-color);
+  color: #ffffff;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+footer a img {
+  max-width: 40px;
+  filter: invert(1);
+  transition: 0.3s;
+  opacity: 0.8;
+  margin: auto;
+}
+footer a img:hover {
+  opacity: 1;
+}
+.cmpny {
+  font-weight: 200;
+  margin: auto 0 0 0;
+}
+.cmpny h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+.cmpny p {
+  font-size: 1em;
+  margin-top: 10px;
+  font-weight: 200;
+}
+.footer-open {
+  display: block;
+  text-align: left;
+  margin: auto 0 0 -900px;
+  font-weight: 200;
+}
+.footer-open h4 {
+  margin: 5px 0;
+  font-size: inherit;
+  font-weight: 200;
+}
+.footer-open h4 span {
+  font-weight: 600;
+  margin-right: 5px;
+}
+footer a {
+  margin: auto 0;
+}
+.footer-menu {
+  margin: auto 0 0 -850px;
+}
+.footer-menu ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+.footer-menu ul li a {
+  text-decoration: none;
+  color: inherit;
+  margin: 5px 0;
+  font-size: inherit;
+  font-weight: 200;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.footer-menu ul li a:hover {
+  opacity: 1;
+}
+@media (max-width: 1536px) {
+  h4,
+  a {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .topbar {
+    padding: 0.15em 0.5em;
+  }
+  .topbar-logo img {
+    max-width: 55px;
+  }
+  .topbar h2 {
+    font-size: 1.1em;
+  }
+  .topbar-info {
+    width: 83%;
+    bottom: 0;
+  }
+  .open,
+  .topbar-contact,
+  .topbar-address {
+    margin-right: 0px;
+  }
+
+  .topbar-contact {
+    width: 45%;
+  }
+  .topbar-address {
+    width: 23%;
+  }
+  .open img,
+  .topbar-contact img,
+  .topbar-address img {
+    max-width: 20px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  .topbar-contact img {
+    margin-right: -15px;
+  }
+  .topbar-address img {
+    margin-right: 3px;
+  }
+  .open h4,
+  .topbar-contact a,
+  .topbar-address a {
+    margin-right: 10px;
+  }
+  nav {
+    padding: 0.7em;
+  }
+  nav ul li a {
+    font-size: 1em;
+  }
+  nav ul a img {
+    max-width: 25px;
+  }
+  nav .nav-logo a img {
+    max-width: 40px;
+  }
+
+  nav.sticky ul li a {
+    font-size: 0.8em;
+  }
+  .banner .content h1 {
+    font-size: 2.8em;
+  }
+  .banner .content h3 {
+    font-size: 1.2em;
+  }
+
+  .btns a {
+    font-size: 1.2em;
+  }
+  .btns a img {
+    max-width: 25px;
+  }
+  .kindlustused {
+    padding: 50px 30px;
+  }
+  .kindlustused .kindlustus-logod img {
+    max-width: 150px;
+  }
+  .lisateenused h4 {
+    font-size: 1.2em;
+  }
+  .meist {
+    padding: 0;
+  }
+  footer {
+    padding: 10px 20px;
+  }
+  .footer-open {
+    margin: auto 0 0 -700px;
+  }
+  .footer-menu {
+    margin: auto 0 0 -680px;
+  }
+}
+@media (max-width: 1440px) {
+  .topbar-info {
+    width: 84%;
+    bottom: 0;
+  }
+  .topbar-contact {
+    width: 44%;
+  }
+  .topbar-address {
+    width: 24%;
+  }
+  .footer-open {
+    margin: auto 0 0 -600px;
+  }
+  .footer-menu {
+    margin: auto 0 0 -580px;
+  }
+}
+@media (max-width: 1366px) {
+  .topbar h4,
+  .topbar a {
+    font-size: 0.9em;
+  }
+  nav ul li a {
+    font-size: 1em;
+  }
+  .banner .content h1 {
+    font-size: 2.2em;
+  }
+  .banner .content h3 {
+    font-size: 1.1em;
+  }
+  .btn1,
+  .btn2 {
+    padding: 13px 17px;
+  }
+  .btns a {
+    font-size: 1.1em;
+  }
+  .btns a img {
+    max-width: 20px;
+  }
+  h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  h4,
+  a {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  h5 {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  p,
+  li {
+    font-size: 1em;
+  }
+  .kontakt h4 {
+    font-size: 1.2em;
+  }
+  .kontakt h5 {
+    font-size: 1.1em;
+  }
+  .form-control,
+  .form-control:hover,
+  .form-control:focus {
+    font-size: 1em;
+  }
+  .submit-btn {
+    font-size: 1.1em;
+  }
+  .footer-open {
+    margin: auto 0 0 -550px;
+  }
+  .footer-menu {
+    margin: auto 0 0 -550px;
+  }
+  .topbar-contact img {
+    margin-right: -10px;
+  }
+  .topbar-address img {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1365px) {
+  .toggle {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .toggle:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    z-index: 1;
+    box-shadow: 0 10px 0 #ffffff;
+    transition: 0.5s;
+  }
+  .toggle:after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  nav ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: auto;
+    background: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+  }
+  nav.active ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    padding-top: 20px;
+  }
+  nav.sticky .toggle {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  nav.sticky .toggle:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background: var(--blue-color);
+    z-index: 1;
+    box-shadow: 0 10px 0 var(--blue-color);
+    transition: 0.5s;
+  }
+  nav.sticky .toggle:after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background: var(--blue-color);
+    z-index: 1;
+    transition: 0.5s;
+  }
+  nav.active ul li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 20px;
+    color: var(--blue-color);
+  }
+
+  nav.active ul a img {
+    filter: invert(13%) sepia(85%) saturate(1212%) hue-rotate(192deg)
+      brightness(91%) contrast(91%);
+    max-width: 40px;
+    margin-top: 20px;
+    visibility: visible;
+  }
+  nav.active ul li a:hover,
+  nav.active ul li a:focus {
+    outline: none;
+  }
+  nav.active ul li a:before {
+    content: "•";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.2em;
+    text-shadow: 0 0 transparent;
+    color: transparent;
+    pointer-events: none;
+    transition: text-shadow 0.3s, color 0.3s;
+    transform: translateX(-50%);
+  }
+  nav.active ul li a:hover::before,
+  nav.active ul li a:focus::before {
+    color: var(--blue-color);
+    text-shadow: 15px 0 var(--blue-color), -15px 0 var(--blue-color);
+  }
+  nav.active ul li a:hover,
+  nav.active ul li a:focus {
+    color: var(--blue-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner,
+  .teenused,
+  .teenused-text,
+  .kahjukasitlus,
+  .varvimine,
+  .keretood,
+  .meist,
+  .meist .content,
+  .arvustused {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .content {
+    max-width: 768px;
+  }
+  .topbar {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
+  }
+
+  .topbar-logo {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .topbar-logo img {
+    max-width: 60px;
+  }
+  .topbar h2 {
+    position: relative;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: var(--blue-color);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .topbar h2 span {
+    color: var(--red-color);
+  }
+  .topbar-info {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 80%;
+    margin-top: 33px;
+  }
+  .open,
+  .topbar-contact,
+  .topbar-address {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-right: 20px;
+  }
+  .topbar-contact {
+    width: 40%;
+  }
+  .topbar-address {
+    width: 22%;
+  }
+  .open img,
+  .topbar-contact img,
+  .topbar-address img {
+    position: relative;
+    max-width: 30px;
+    margin-right: 10px;
+    filter: invert(13%) sepia(85%) saturate(1212%) hue-rotate(192deg)
+      brightness(91%) contrast(91%);
+  }
+  .open h4,
+  .topbar-contact a,
+  .topbar-address a {
+    margin-right: 10px;
+  }
+}

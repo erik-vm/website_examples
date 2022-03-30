@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.sec{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background: #0261BF;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+.logo img{
+    max-width: 60px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgb(246, 246, 246);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textBox{
+    position: relative;
+    width: 600px;
+    color: #fff;
+}
+.textBox h2{
+    font-size: 4em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.textBox h2 span{
+    font-size: 2em;
+}
+.textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    background: #fff;
+    padding: 8px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.imageBox img{
+    max-width: 250px;
+    margin-right: 60px;
+}
+.thums{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.thums a img{
+    max-width: 50px;
+    margin: 15px;
+    transition: 500ms;
+}
+.thums a img:hover{
+    transform: translateY(-20px);
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 50px;
+}
+.sci ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sci ul li{
+    list-style: none;
+    margin: 10px 0px;
+    filter: invert(1);
+}
+.sci ul li img{
+    max-height: 30px;
+    cursor: pointer;
+}

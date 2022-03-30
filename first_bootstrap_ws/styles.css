@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  outline: none !important;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  position: relative;
+  z-index: 100000000;
+}
+p {
+  font-size: 1.15rem;
+}
+.navbar {
+  background: transparent !important;
+  transition: 0.5s;
+}
+
+.navbar.scrolled {
+  background: #000000 !important;
+  transition: 0.5s;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #000 !important;
+  background: #ffffff;
+}
+.navbar-light .navbar-nav .active > .nav-link:hover {
+  color: #000000 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 1) !important;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+  color: rgba(255, 255, 255, 1) !important;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.banner {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(bg.jpg);
+  background-size: cover;
+  margin-bottom: 0 !important;
+}
+.banner:before,
+.sec2:before,
+.contact:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(#000, transparent);
+  pointer-events: none;
+}
+.banner:after,
+.sec2:after,
+.contact:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(360deg, #000, transparent);
+  pointer-events: none;
+}
+.height100p {
+  height: 100vh;
+}
+.h100 {
+  height: 100%;
+}
+.contentBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+.contentBox h1 {
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+.contentBox p {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.sec1 {
+  padding: 100px 0;
+  background: #000000;
+  margin-top: 0;
+}
+.headerText {
+  color: #ffffff;
+}
+.headerText h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.placeBox {
+  position: relative;
+  max-width: 300px;
+  height: 400px;
+  margin: 0px auto;
+  background: #000000;
+  margin-top: 30px;
+}
+.placeBox .imgBx {
+  width: 100%;
+  height: 100%;
+}
+.placeBox .imgBx img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.placeBox .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+}
+.placeBox .content h3 {
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  background: rgb(0, 0, 0, 0.95);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+.placeBox .content h3 span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.sec2 {
+  position: relative;
+  background: url(bg2.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.sec2 h2 {
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+}
+.btnD1 {
+  border: 2px solid #ffffff !important
+  ;
+  color: #000000 !important
+  ;
+  background: #ffffff !important
+  ;
+  border-radius: 50px !important;
+  padding: 15px 50px !important
+  ;
+  font-size: 1.15rem !important
+  ;
+  outline: none !important
+  ;
+  font-weight: 500 !important
+  ;
+  margin-top: 20px !important
+  ;
+}
+.blog {
+  position: relative;
+  padding: 100px 0;
+  background: #000000;
+}
+.blogpost {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  background: #ffffff;
+}
+.blogpost .imgBx {
+  height: 400px;
+}
+.blogpost .imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogpost .content {
+  padding: 15px;
+}
+.blogpost .content h1 {
+  margin: 0;
+  padding: 0 0 10px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.btnD2,
+.btnD2:hover {
+  background: #262626;
+  color: #ffffff;
+  border-radius: 30px !important;
+  padding: 10px 20px !important;
+  float: right;
+}
+.contact {
+  position: relative;
+  padding: 100px 0;
+  background: url(contact.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+.contact form {
+  position: relative;
+  z-index: 1000;
+}
+.contact .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255, 0.2);
+  height: 50px;
+  border-radius: 0;
+  background: rgb(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+.contact .form-control:focus {
+  background: rgb(0, 0, 0, 0.6) !important;
+  color: #ffffff !important;
+}
+.contact .form-control:focus,
+.contact .form-control:hover {
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255, 1);
+  box-shadow: none;
+}
+.contact .textarea {
+  min-height: 100px;
+}
+.contact label {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+footer {
+  background: #000000;
+  padding: 50px 0 0;
+}
+.sci {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sci li {
+  list-style: none;
+
+  margin: 0 20px;
+}
+.sci li a {
+  text-decoration: none;
+  color: #777777;
+  font-size: 2em;
+  transition: 0.5s;
+}
+.sci li a:hover {
+  color: #ffffff;
+}
+.cpryt {
+  text-align: center;
+  margin-top: 20px;
+  color: #777777;
+}
+.cpryt a,
+.cpryt a:hover {
+  color: #ffffff;
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 30px 100px;
+}
+.logo img{
+    width: 80px;
+}
+.navbar ul{
+    position: relative;
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #333;
+    margin-left: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.txtbx{
+    position: relative;
+max-width: 600px;
+}
+.txtbx h2{
+    font-size: 4em;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+.txtbx h2 span{
+    color: #017143;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+.txtbx p{
+    color: #333;
+}
+.txtbx a{
+    display: inline-block;
+  margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: #017143;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 40px;
+}
+.imgbx{
+    position: relative;
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+.imgbx img{
+    max-width: 340px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 20px;
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    cursor: pointer;
+    transition: 500ms;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
+}
+.sci{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sci li{
+    list-style: none;
+
+}
+.sci li a{
+    display: inline-block;
+    margin: 5px 0px;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}

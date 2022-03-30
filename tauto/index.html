@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Autode keretööd ja värvimine Tallinnas | Tarmo Auto</title>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="topbar-logo">
+          <img src="img/tarmoauto.png" alt="Tarmo Auto logo" />
+          <h2>Tarmo <span>Auto</span></h2>
+        </div>
+        <div class="topbar-info">
+          <div class="open">
+            <img src="img/time.svg" alt="Lahtioleku ajad" />
+            <h4><span>E - N</span> 9.00 - 17.00 <br /></h4>
+            <h4><span>R</span> 9.00 - 16.00 <br /></h4>
+            <h4><span>L, P</span> suletud</h4>
+          </div>
+          <div class="topbar-contact">
+            <img src="img/phone.svg" alt="Kontakt telefon" />
+            <a href="tel:+37253044555">+372 530 44 555</a>
+            <a href="tel:+3726213939">+372 6213 939</a>
+            <img src="img/email.svg" alt="Email" />
+            <a href="mailto:info@tarmoauto.ee">info@tarmoauto.ee</a>
+          </div>
+          <div class="topbar-address">
+            <img src="img/address.svg" alt="Aadress" />
+            <a href="https://goo.gl/maps/PzoFn7aWCmVPYN856" target="_blank"
+              >Tallinn, Peterburi tee 38/7, 11415</a
+            >
+          </div>
+        </div>
+      </div>
+      <nav id="nav-bar" class="nav-bar">
+        <div class="nav-logo">
+          <a href="#home"><img src="img/tarmoauto.png" alt="Logo" /></a>
+        </div>
+        <ul>
+          <li><a href="#teenused" onclick="toggle()">Teenused</a></li>
+          <li><a href="#meist" onclick="toggle()">Meist</a></li>
+          <li><a href="#kontakt" onclick="toggle()">Kontakt</a></li>
+          <a
+            href="https://www.facebook.com/Tarmo-Auto-254935177903772/"
+            target="_blank"
+            onclick="toggle()"
+            ><img src="img/facebook.png" alt=""
+          /></a>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+      </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner" id="home">
+      <div class="content">
+        <div class="headingText">
+          <h1>
+            AUTODE VÄRVIMINE <br />
+            KERETÖÖD | KAHJUKÄSITLUS
+          </h1>
+          <h3>
+            Rohkem kui 20 aastat kogemust avariijärgsete sõidukite remondis ja
+            kindlustusjuhtumistes.
+          </h3>
+        </div>
+        <div class="btns">
+          <a href="tel:+37253044555" class="btn1"
+            >Helistage <img src="img/phone.svg" alt="" />
+          </a>
+          <a href="#asukoht" class="btn2"
+            >Meie asukoht <img src="img/arrow.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Teenused -->
+    <section class="teenused" id="teenused">
+      <div class="content">
+        <h2>Meie poolt pakutavad teenused</h2>
+        <div class="kahjukasitlus">
+          <div class="teenused-text">
+            <h3>Kahjukäsitlus</h3>
+            <br />
+
+            <p>
+              Peale liiklusõnnetust Te võite pöörduda meie poole, kus me vaatame
+              sõiduki üle, teeme fotod vigastustest ja aitame Teil täita
+              vajalikud dokumendid kindlustus pakkujale. Edasi me suhtleme Teie
+              kindlustusega edasi ise. Positiivse vastuse korral kindlustusest
+              remondi tööde alustamiseks, saame kokku leppida Teile sobiva aja,
+              millal sõiduk prandusse tuua.
+            </p>
+            <br />
+            <p>Meie poole pöördudes palume kaasa võtta:</p>
+            <br />
+            <ul>
+              <li>
+                Vorm "<a href="#" target="_blank">Liiklusõnnetuse teade</a>
+              </li>
+              <li>Sõiduki registreerimistunnistus</li>
+              <li>Sõidukit juhtinud isiku juhtimistõigust tõendav dokument</li>
+              <li>
+                Kindlustuspoliisid: liikluskindlustus, omavastutuskindlustus
+                (kasko)
+              </li>
+              <li>Muud õnnetusjuhtumiga seotud dokumendid</li>
+            </ul>
+          </div>
+          <div class="teenused-img">
+            <img src="img/kahjukäsiltus .jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="kindlustused">
+        <h2>Otsetee Teie kindlustusepakkuja kahjuteate lehele</h2>
+        <div class="kindlustus-logod">
+          <a
+            href="https://www.bta.ee/ee/claims/liikluskindlustus"
+            target="_blank"
+            ><img src="img/kindlustused/bta_kindlustus.png" alt="BTA"
+          /></a>
+          <a href="https://www.ergo.ee/kahjujuhtum/auto" target="_blank"
+            ><img src="img/kindlustused/ergo_kindlustus.png" alt="Ergo"
+          /></a>
+          <a
+            href="https://www.gjensidige.ee/teatan-kahjust/liikluskahju-avaldus"
+            target="_blank"
+            ><img src="img/kindlustused/gjensidige_kindlustus.png" alt=""
+          /></a>
+          <a
+            href="https://ekindlustus.if.ee/et/kahjukasitlus/liikluskahju/"
+            target="_blank"
+            ><img src="img/kindlustused/if_kindlustus.png" alt="If"
+          /></a>
+          <a href="https://www.inges.ee/kahjuteade/" target="_blank"
+            ><img src="img/kindlustused/inges_kindlustus.png" alt="Inges"
+          /></a>
+          <a href="https://pzu.ee/kahjukasitlus/liiklus//" target="_blank"
+            ><img src="img/kindlustused/pzu_kindlustus.png" alt="PZU"
+          /></a>
+          <a
+            href="https://www.salva.ee/et/kahjukasitlus/teata-kahjust/vorm-soiduki-ja-liikluskindlustuse-kahjujuhtumi-teade/"
+            target="_blank"
+            ><img src="img/kindlustused/salva_kindlustus.png" alt="Salva"
+          /></a>
+          <a href="https://pood.seesam.ee/et/claims/mtplclaim" target="_blank"
+            ><img src="img/kindlustused/seesam_kindlustus.png" alt="Seesam"
+          /></a>
+          <a
+            href="https://www.swedbank.ee/private/insurance/reports/traffic2/"
+            target="_blank"
+            ><img src="img/kindlustused/swedbank_kindlustus.png" alt="Swedbank"
+          /></a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="varvimine">
+          <div class="teenused-img">
+            <img src="img/varvimine.jpg" alt="" />
+          </div>
+          <div class="teenused-text">
+            <h3>Sõidukite värvimine</h3>
+            <br />
+            <p>
+              Sõidukeid värvides me lähtume mitte ainult sõiduki margist kuid ka
+              selle väljalaske aastast. Iga järgneva mudeliga muudavad tootjad
+              mingit osa värvi koostises, jättes värvikoodi samaks. Siin
+              tulevadki appi meie kogemused ja teadmised, et Teie sõiduk oleks
+              võimalikult orginaali lähedane meilt lahkudes.
+            </p>
+            <br />
+            <p>
+              Autode värvimiseks kasutame kvaliteeteseid Glasurit vesibaasil
+              värve ja muid vahendeid. Parema töö saavutaimiseks installeerisime
+              2014. aastal moodsa Verta värvikambri, mis mahutab suuri
+              kaubikuid.
+            </p>
+            <img src="img/glasurit.png" alt="Glasruit Grupp" />
+            <img src="img/paintlines.png" alt="Paintlines" />
+          </div>
+        </div>
+        <div class="keretood">
+          <div class="teenused-text">
+            <h3>Keretööd</h3>
+            <br />
+            <p>
+              Keretöödes kas taastame või asendame parandamist vajava detaili
+              uue detailiga mõistlikkuse printsiibist lähtudes. Parandustöödes
+              kasutame kerevenituspinki, robotit, keevitus- ja
+              liimitehnoloogiat. Remondijärgselt piserdame parandatud detailid
+              korrosioonitõrjega, et vähendada rooste tekke ohtu.
+            </p>
+
+            <img src="img/AKL_logoWEB.png" alt="Glasruit Grupp" />
+          </div>
+          <div class="teenused-img">
+            <img src="img/keretood.jpg" alt="" />
+          </div>
+        </div>
+        <div class="lisateenused">
+          <h3>Lisateenused</h3>
+          <br />
+          <h4>Pesu- ja puhastusteenused</h4>
+          <p>
+            Värvmisetööde järgselt on väline autopesu Teie jaoks täiesti tasuta.
+            Kuid lisaks saab veel tellida erinevaid salongi ja kerehoolduseid.
+            Näiteks salongi koristus, nahksisu hooldus, kere poleerimine ja
+            vahatamine. Teenuse soovist palume teatada anda vähemalt 3-5 päeva
+            enne sõiduki remonti toomist.
+          </p>
+          <br />
+          <h4>Puksiiriteenused</h4>
+          <p>
+            Puksiirteenus on sõidukit Tarmo Autosse remonti tuues kliendi jaoks
+            tasuta. Eraldi teenusena on hind kokkuleppel. Lisainfoks palume
+            helistada meie põhinumbril
+            <a
+              href="tel:+37253044555"
+              style="text-decoration: none; color: inherit;"
+              >+372 530 44 555</a
+            >.
+          </p>
+          <br />
+          <h4>Asendusauto võimalus</h4>
+          <p>
+            Sõiduki remondi perioodiks on võimalik broneerida asendusauto, mida
+            tuleb teha sõiduki remondi aega kokku leppides. Asendusauto maksjaks
+            on kas klient või siis kindlustusselts, kes väljastab omapoolse
+            garantiikirja teenuse tasumiseks.
+          </p>
+          <br />
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="meist" id="meist">
+      <div class="content">
+        <div class="meist-text">
+          <h2>
+            Tarmo Auto
+          </h2>
+          <h5>TEGUTSEME ALATEST AASTAST 1997</h5>
+          <br />
+          <p>
+            Tarmo Auto OÜ tegutseb 1997 aastast alates. Oleme spetsialiseerunud
+            autode kere- ja plekitöödele ja oma teenust pakume kõigile
+            sõiduautodele ning väikebussidele-kaubikutele vaatamata valmistajale
+            ning valmistusaastale. <br /><br />Suurimaks kliendigrupiks,
+            kauaagseteks koostööpartneriteks on kindlustusseltsid, kelledega on
+            sõlmitud ka kahjukäsitlusteenuse osutamise lepingud. 2009 aastal
+            olime esimeses liitujategrupis Eestis Liikluskindlustuse Fondi poolt
+            kasutusele võetava WINCABAS kahjukäsitlusprogrammiga.
+          </p>
+          <div class="controls">
+            <h2 onclick="prevSlide();"><</h2>
+            <h2 onclick="nextSlide();">></h2>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="meist-img" id="slideshow">
+            <img
+              src="img/t88kojapildid/autode värvimine tallinnas tarmo auto pilt1.jpg"
+              alt=""
+              class="active"
+            />
+            <img
+              src="img/t88kojapildid/autode värvimine tallinnas tarmo auto pilt2.jpg"
+              alt=""
+            />
+            <img
+              src="img/t88kojapildid/autode värvimine tallinnas tarmo auto pilt3.jpg"
+              alt=""
+            />
+            <img
+              src="img/t88kojapildid/autode värvimine tallinnas tarmo auto pilt4.jpg"
+              alt=""
+            />
+            <img
+              src="img/t88kojapildid/autode värvimine tallinnas tarmo auto pilt5.jpg"
+              alt=""
+            />
+            <img
+              src="img/t88kojapildid/autode värvimine tallinnas tarmo auto pilt6.jpg"
+              alt=""
+            />
+            <img
+              src="img/t88kojapildid/autode värvimine tallinnas tarmo auto pilt7.jpg"
+              alt=""
+            />
+            <img
+              src="img/t88kojapildid/autode värvimine tallinnas tarmo auto pilt8.jpg"
+              alt=""
+            />
+            <img
+              src="img/t88kojapildid/autode värvimine tallinnas tarmo auto pilt9.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="arvustused">
+      <div class="content">
+        <h3>Klientide tagasiside</h3>
+        <div class="review">
+          <h4>Allar Taimsaare</h4>
+          <img src="img/fivestarsrating.png" alt="raiting" />
+          <p>
+            Teenindus mugav ja hea suhtumisega. Kindlustusjuhtumi korral sai
+            kiirelt auto üle vaadatud ja aeg kokku lepitud. Tehtud keretööde
+            kvaliteet väga hea.
+          </p>
+        </div>
+        <div class="review">
+          <h4>Külli Sõstra</h4>
+          <img src="img/fivestarsrating.png" alt="raiting" />
+          <p>
+            Peale avariid kahjukäsitlusteenindus väga kiire ja auto remont väga
+            korralik. Suhtlus objektiivne ja meeldiv.
+          </p>
+        </div>
+        <div class="review">
+          <h4>Ole Bentel</h4>
+          <img src="img/fivestarsrating.png" alt="raiting" />
+          <p>Great body shop. Does a nice job..</p>
+        </div>
+      </div>
+    </section>
+    <section class="asukoht" id="asukoht">
+      <div class="content">
+        <div class="asukoht-text">
+          <h2>Kus asume ja kuidas meieni jõuda?</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At fugit
+            quis quasi et labore repudiandae accusamus expedita amet explicabo
+            ipsa veniam ipsam iusto, voluptates itaque beatae cumque illum
+            minima doloremque debitis aspernatur! Cum enim expedita animi
+            pariatur odio! Numquam iusto natus dolores ea nulla, nam maxime id
+            necessitatibus molestias amet illum laboriosam eaque delectus,
+            sequi, reiciendis saepe! Consequatur minus sapiente, impedit dicta
+            culpa nostrum rem in! Facere odit enim dolores sed inventore
+            veritatis quod quis vel ullam. Neque iste debitis beatae eum vitae
+            aliquid maxime, inventore minima explicabo hic quidem, dicta
+            consequuntur voluptates? Numquam dicta reiciendis cumque, beatae
+            quaerat eligendi?
+          </p>
+        </div>
+
+        <div class="map">
+          <a href="https://goo.gl/maps/3tv6CRm8yAiD1iXH9" target="_blank"
+            ><img src="img/kaart.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- kontakt -->
+    <section class="kontakt" id="kontakt">
+      <h2>Võtke meiega ühendust</h2>
+      <div class="content">
+        <div class="contact-form">
+          <form id="contact-form" method="post" action="contact-form.php">
+            <input
+              type="text"
+              id="Name"
+              name="Name"
+              class="form-control"
+              placeholder="Nimi"
+              required
+            />
+
+            <input
+              type="email"
+              id="Email"
+              name="Email"
+              class="form-control"
+              placeholder="E-mail"
+              required
+            />
+            <input
+              type="tel"
+              id="Telefon"
+              name="Telefon"
+              class="form-control"
+              placeholder="Telefoni number"
+            />
+            <input
+              type="text"
+              id="Autoreg"
+              name="Autoreg"
+              class="form-control"
+              placeholder="Auto reg. number"
+            />
+
+            <textarea
+              id="Message"
+              name="Message"
+              class="form-control"
+              rows="6"
+              maxlength="3000"
+              placeholder="Sõnum"
+              required
+            ></textarea>
+
+            <button type="submit" class="submit-btn">Saada</button>
+          </form>
+        </div>
+        <div class="kontaktid">
+          <div class="kontor">
+            <h4><span>Tarmo Mihkelson</span> | Juhataja</h4>
+
+            <h5>Telefon: <a href="tel+37253011002">+372 53 011 002</a></h5>
+
+            <h5>
+              E-mail: <a href="mailto:tarmo@tarmoauto.ee">tarmo@tarmoauto.ee</a>
+            </h5>
+            <hr />
+          </div>
+          <div class="kontor">
+            <h4><span>Kristjan Sööt</span> | Meister</h4>
+
+            <h5>Telefon: <a href="tel+37253044555"> +372 53 044 555</a></h5>
+
+            <h5>
+              E-mail: <a href="mailto:info@tarmoauto.ee">info@tarmoauto.ee</a>
+            </h5>
+            <hr />
+          </div>
+          <div class="kontor">
+            <h4><span>Külli Rajapuu</span> | Kosultant</h4>
+
+            <h5>Telefon: <a href="tel+37254004143"> +372 54 004 143</a></h5>
+
+            <h5>
+              E-mail: <a href="mailto:kylli@tarmoauto.ee">kylli@tarmoauto.ee</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="cmpny">
+        <h3>OÜ TARMO AUTO</h3>
+        <hr />
+        <p>
+          Registrikood: 10307165
+          <br />
+          Aadress: Peterburi tee 38/7, 11415, Tallinn, Harjumaa, Eesti
+        </p>
+      </div>
+
+      <div class="footer-menu">
+        <ul>
+          <li><a href="#teenused">Teenused</a></li>
+          <li><a href="#meist">Meist</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-open">
+        <h4><span>E - N</span> 9.00 - 17.00 <br /></h4>
+        <h4><span>R</span> 9.00 - 16.00 <br /></h4>
+        <h4><span>L, P</span> suletud</h4>
+      </div>
+      <a
+        href="https://www.facebook.com/Tarmo-Auto-254935177903772/"
+        target="_blank"
+        ><img src="img/facebook.png" alt=""
+      /></a>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
